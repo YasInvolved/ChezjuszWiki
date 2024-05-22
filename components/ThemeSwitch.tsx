@@ -11,7 +11,7 @@ export default function ThemeSwitch() {
 
     return (
         <button className={style} onClick={() => setColorMode(colorMode === "dark" ? "light" : "dark")}>
-            <Image src={colorMode == "light" ? MoonIcon : SunIcon} alt="słońce" width={32} height={32} className="dark:invert"/> 
+            <Image src={colorMode == "light" ? MoonIcon : SunIcon} alt="słońce" className="dark:invert md:w-8 w-6"/> 
         </button>
     )
 }
